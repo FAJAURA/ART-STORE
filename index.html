@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fajaura Art Gallery</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(180deg, #fdf1f5, #f4f9ff, #fff9f0);
+      color: #444;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #ffe8e8;
+      padding: 20px;
+      font-size: 1.8rem;
+      color: #b76e79;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav {
+      background-color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      border-bottom: 2px dashed #ffd6d6;
+    }
+    nav a {
+      color: #b76e79;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff9eb3;
+    }
+    .catalog {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: #ffe8e8;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #b76e79;
+    }
+  </style>
+</head>
+<body>
+  <header>🎨 Fajaura Art Gallery 🎨</header>
+  <nav>
+    <a href="#">Art Pieces</a>
+    <a href="#">Stickers</a>
+    <a href="#">Prints & Portraits</a>
+    <a href="#">Digital Products</a>
+    <a href="#">Handmade Products</a>
+    <a href="#">Many More</a>
+  </nav>
+  <section class="catalog">
+    <div class="card">🌸 Art #1</div>
+    <div class="card">🌼 Art #2</div>
+    <div class="card">🌷 Art #3</div>
+  </section>
+  <footer>© 2025 Fajaura Art Gallery | Pastel vibes & handmade love 💕</footer>
+</body>
+</html>
