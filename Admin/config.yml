@@ -1,0 +1,79 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "artpieces"
+    label: "Art Pieces"
+    folder: "artpieces"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Price (PKR)", name: "price_pkr", widget: "string"}
+      - {label: "Price (USD)", name: "price_usd", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+
+  - name: "stickers"
+    label: "Stickers"
+    folder: "stickers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Price (PKR)", name: "price_pkr", widget: "string"}
+      - {label: "Price (USD)", name: "price_usd", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+
+  - name: "prints"
+    label: "Prints & Portraits"
+    folder: "prints"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Price (PKR)", name: "price_pkr", widget: "string"}
+      - {label: "Price (USD)", name: "price_usd", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+
+  - name: "digital"
+    label: "Digital Products"
+    folder: "digital"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Price (PKR)", name: "price_pkr", widget: "string"}
+      - {label: "Price (USD)", name: "price_usd", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+
+  - name: "handmade"
+    label: "Handmade Products"
+    folder: "handmade"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Price (PKR)", name: "price_pkr", widget: "string"}
+      - {label: "Price (USD)", name: "price_usd", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+
+  - name: "manymore"
+    label: "Many More"
+    folder: "manymore"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Price (PKR)", name: "price_pkr", widget: "string"}
+      - {label: "Price (USD)", name: "price_usd", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
